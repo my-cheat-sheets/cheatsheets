@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const content = document.getElementById('content');
   const themeToggle = document.getElementById('theme-toggle');
+  const menuToggle = document.getElementById('mobile-menu');
   const navMenu = document.querySelector('.nav-menu');
 
   // Function to load a cheatsheet by name
@@ -86,4 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
       pre.appendChild(btn);
     });
   }
+
+  
+  // Mobile nav toggle
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
+  
 });
